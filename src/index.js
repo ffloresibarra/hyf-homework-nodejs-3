@@ -26,21 +26,21 @@ app.get('/user/:id', (req, res) => {
     res.json(user);
 });
 
-// app.delete('/user/:id', (req, res) => {
+app.delete('/user/:id', (req, res) => {
 
    
-//     if(users.length > 0){
-//         users = [];
-//         res.status(202).json({
-//             ok: true
-//         })
-//     } else {
-//         res.status(204).json({
-//             ok: true
-//         });
-//     }
+    if(users.length > 0){
+        users = [];
+        res.status(202).json({
+            ok: true
+        })
+    } else {
+        res.status(204).json({
+            ok: true
+        });
+    }
 
-// })
+})
 
 app.listen(3000, () => {
     console.log('Listen on port 3000');
