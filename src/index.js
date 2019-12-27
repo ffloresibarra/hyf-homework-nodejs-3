@@ -16,15 +16,15 @@ app.get('/users', (req, res) => {
 
 })
 
-// app.post('/user', (req, res) => {
-//     users.push({id:0})
-//     res.json(users);
-// })
+app.post('/user', (req, res) => {
+    users.push({id:0})
+    res.json(users);
+})
 
-// app.get('/user/:id', (req, res) => {
-//     const user = users.find(user => user.id == req.params.id);
-//     res.json(user);
-// });
+app.get('/user/:id', (req, res) => {
+    const user = users.find(user => user.id == req.params.id);
+    res.json(user);
+});
 
 // app.delete('/user/:id', (req, res) => {
 
