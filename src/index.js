@@ -3,18 +3,18 @@ const express = require('express');
 
 const app  = new express();
 
-// let users = [];
+let users = [];
 
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-// app.get('/users', (req, res) => {
+app.get('/users', (req, res) => {
         
-//     res.json(users)
+    res.json(users)
 
-// })
+})
 
 // app.post('/user', (req, res) => {
 //     users.push({id:0})
